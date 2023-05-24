@@ -1,0 +1,368 @@
+
+*{
+   padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+nav{
+    background: #9600FE;
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    
+    padding: 20px 50px;
+}
+.logo{
+    width: 120px;
+  height: 80px;
+  
+  
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family:'Quicksand', sans-serif;
+}
+li a.active, li a:hover{
+    background: #A728FF ;
+    transition: .5s;
+
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+#check{
+    display: none;
+    font-family:'Quicksand', sans-serif;
+}
+
+body{ 
+  margin: 0;
+  padding: 0;
+  font-family:'Quicksand', sans-serif;
+   }
+
+
+
+/*bloque 1*/
+.pantallaenbloque{
+  display: flex;
+  background:  linear-gradient(to right,#1B003E,#6F00FE);
+}
+.izquierda{
+  
+   
+  text-align: right ;
+  font-size:15px;
+   width:100%;
+  height:80vh;
+  display: ;
+}
+
+.titulo{
+  font-family:'Staatliches', sans-serif; 
+  text-align: right;
+  font-size: 100px;
+  margin-top: 150px;
+  color: #ffffff;
+  display: block;
+}
+
+
+.derecha{  
+   width: 100%;
+  height:80vh;
+  display:
+}
+
+.imagen1{   
+  margin-top:110px;
+  height: 400px;
+  width:650px;
+ 
+}
+
+
+
+
+
+
+
+/*bloque 2*/
+
+.bloque-2{
+  width: 100%;
+  height: 70vh;
+  font-size:30px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.text{
+  font-family:'Staatliches' ;
+  color:#9600FE;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top:0px;
+
+
+}
+.titulo2{
+  font-size: 60px;
+}
+.texto{  
+  margin: 5px;
+  font-family:'Quicksand' ;
+  font-size:30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+/****bloque 3******/
+
+.bloque-3{
+  width: 100%;
+  height: 80vh;
+  background:  linear-gradient(to right,#1B003E,#6F00FE);
+  
+  
+  
+}
+
+.textosservicios{
+  color:#ffffff ;
+  justify-content: center;
+  text-align: left;
+  display: flex;
+
+  
+
+
+}
+
+.titulobloque3{
+  font-family: 'Staatliches',sans-serif ;
+  margin-top: 200px;
+  font-size: 30px;
+  padding: 15px;
+}
+
+.primerh3{
+  margin-top: 130px;
+  padding: 10px;
+  font-size: 23px;
+}
+
+.primerh4{
+  margin-top: 130px;
+  padding:10px;
+  font-size: 23px;
+
+}
+.primerh5{
+  margin-top: 130px;
+  padding: 10px;
+  font-size: 23px;
+}
+.primerh6{
+  margin-top: 130px;
+  padding: 10px;
+  font-size: 23px;
+}
+
+
+
+/*PIE DE PAGINA */
+
+footer{
+   background-color:#9600FE;
+}
+
+.piedepagina{
+ margin-left:20px;
+ color: #ffff;
+ padding: 8px;
+
+}
+ 
+
+ /*media*/
+/*media */
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #9600FE;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #1B003E;
+
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+@media (max-width: 858px){
+  .pantallaenbloque{
+    display: block
+  }
+  
+.titulo{
+  font-family:'Staatliches', sans-serif; 
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+  font-size: 50px;
+  margin-top: -1px;
+  
+  color: #ffffff;
+}
+   
+.izquierda{
+   width:100%;
+  height:50vh;
+}
+.derecha{
+   width:100%;
+  height:35vh;
+}
+
+  .imagen1{
+        margin-top: -26px;
+        height: 35vh;
+        width: 380px;
+        text-align: right;
+  justify-content: center;     
+  }
+  
+  .titulo2{
+
+    font-size: 30px;
+    display: flex;
+  }
+ 
+  .texto{
+    font-size: 20px;
+  }
+  
+
+  .bloque-3{
+  width: 100%;
+  height: 150vh;
+  background:  linear-gradient(to right,#1B003E,#6F00FE);
+   }
+
+
+  .textosservicios{
+    
+    display: block;
+  }
+   
+   .titulobloque3{
+     font-size: 30px;
+     text-align: center;
+   }
+
+  .primerh3{
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .primerh4{
+    font-size:20px;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .primerh5{
+    font-size: 20x;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  .primerh6{
+    font-size: 20x;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+}
+
+
